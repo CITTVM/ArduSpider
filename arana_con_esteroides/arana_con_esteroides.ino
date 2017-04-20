@@ -54,9 +54,9 @@ BTI.write(55);
 void loop() {
   // put your main code here, to run repeatedly:
 /*move1();*/
-/*PFD();
+PFD();
 PTI();
-PFI();*/
+PFI();
 PTD();
 }
 /*Metodo idea*/
@@ -151,16 +151,16 @@ delay(600);
 void PTD(){
 delay(600);
 GTD.write(50);
-CTD.write(50);
+CTD.write(55);
 delay(600);
-BTD.write(50);
-CTD.write(50);
+BTD.write(70);
+CTD.write(55);
 delay(600);
 GTD.write(65);
-CTD.write(50);
+CTD.write(55);
 delay(600);
-BTD.write(100);
-CTD.write(50);
+BTD.write(120);
+CTD.write(55);
 }
 
 
