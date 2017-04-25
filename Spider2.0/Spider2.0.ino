@@ -27,8 +27,8 @@ void setup() {
  bfi.attach(9);
  bmd.attach(10);
  bmi.attach(11);
- btd.attach(12);
- bti.attach(13);
+ btd.attach(13);
+ bti.attach(12);
 
  
 //Posicion inicio
@@ -54,6 +54,11 @@ void loop() {
 //pruebaGiro();
 avanzarDer();
 avanzarIzq();
+
+//caminar();
+
+
+
 }
 
 //movimiento por lado Der
@@ -61,7 +66,7 @@ void avanzarDer(){
  delay(500);
   bfd.write(80);
   bmi.write(100);
-  btd.write(80);
+  btd.write(70);
   delay(500);
   gfd.write(125);
   gmi.write(60);
@@ -83,29 +88,77 @@ void avanzarDer(){
 
 //movimiento por lado IZQ
 void avanzarIzq(){
-   delay(500);
+  
   bfi.write(115);
   bmd.write(75);
   bti.write(100);
   delay(500);
+  
   gfi.write(60);
   gmd.write(125);
   gti.write(80);
   delay(500);
   /*
  */
-  delay(500);
+
   bfi.write(95);
   bmd.write(90);
   bti.write(80);
   delay(500);
+  
   gfi.write(100);
   gmd.write(90);
   gti.write(130);
   delay(500);
   
   }
+void caminar(){
+  
+  bfd.write(80);
+  bmi.write(100);
+  btd.write(80);
+  delay(200);
+  gfd.write(125);
+  gmi.write(60);
+  gtd.write(100);
+  delay(200);
+  /*
+ */
 
+  bfd.write(90);
+  bmi.write(90);
+  btd.write(90);
+  delay(200);
+  gfd.write(90);
+  gmi.write(85);
+  gtd.write(40);
+  delay(200);
+
+
+
+
+
+  bfi.write(115);
+  bmd.write(75);
+  bti.write(100);
+  delay(200);
+  gfi.write(60);
+  gmd.write(125);
+  gti.write(80);
+  delay(200);
+  /*
+ */
+ 
+  bfi.write(95);
+  bmd.write(90);
+  bti.write(80);
+  delay(200);
+  gfi.write(100);
+  gmd.write(90);
+  gti.write(130);
+  delay(200);
+  
+}
 
  //proceso preparacion motores brazos
 void prepararBrazos(){
@@ -184,3 +237,51 @@ void prepararGiro(){
    }    
   }
 }*/
+
+
+void baile(){
+  
+  bfd.write(80);
+  bmi.write(100);
+  btd.write(80);
+  delay(200);
+  gfd.write(125);
+  gmi.write(60);
+  gtd.write(100);
+  delay(200);
+gfd.write(90);
+  gmi.write(85);
+  gtd.write(40);
+  delay(200);
+bfd.write(90);
+  bmi.write(90);
+  btd.write(90);
+  
+
+   delay(200);
+  bfi.write(115);
+  bmd.write(75);
+  bti.write(100);
+  delay(200);
+  gfi.write(60);
+  gmd.write(125);
+  gti.write(80);
+  delay(200);
+  gfi.write(100);
+  gmd.write(90);
+  gti.write(130);
+  delay(200);
+  /*
+ */
+ 
+  bfi.write(95);
+  bmd.write(90);
+  bti.write(80);
+  delay(200);
+  
+  delay(500);
+
+
+
+}
+
