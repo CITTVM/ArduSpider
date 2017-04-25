@@ -76,31 +76,31 @@ CFD.write(120);         //|
 }*/
 
 void PFD(){
-delay(600);
+delay(200);
 BFD.write(100);
 CFD.write(120);
-delay(600);
+delay(200);
 GFD.write(130);
 CFD.write(120);
-delay(600);
+delay(200);
 BFD.write(50);
 CFD.write(120);
-delay(600);
+delay(200);
 GFD.write(110);
 CFD.write(120);  
 }
 
 void PFI(){
-delay(600);
+delay(200);
 BFI.write(85);
 CFI.write(60);
-delay(600);
+delay(200);
 GFI.write(20);
 CFI.write(70);
-delay(600);
+delay(200);
 BFI.write(125);
 CFI.write(70);
-delay(600);
+delay(200);
 GFI.write(50);
 CFI.write(60);
 
@@ -133,32 +133,32 @@ CFI.write(120);
 }
 
 void PTI(){
-delay(600);
+delay(200);
 GTI.write(130);
 CTI.write(125); /*No modificar*/
-delay(600);
+delay(200);
 BTI.write(100);
 CTI.write(125); /*No modificar*/
-delay(600);
+delay(200);
 GTI.write(110);
 CTI.write(125); /*No modificar*/
-delay(600);
+delay(200);
 BTI.write(50);
 CTI.write(125); /*No modificar*/
-delay(600);
+delay(200);
 }
 
 void PTD(){
-delay(600);
+delay(200);
 GTD.write(50);
 CTD.write(55);
-delay(600);
+delay(200);
 BTD.write(70);
 CTD.write(55);
-delay(600);
+delay(200);
 GTD.write(65);
 CTD.write(55);
-delay(600);
+delay(200);
 BTD.write(120);
 CTD.write(55);
 }
