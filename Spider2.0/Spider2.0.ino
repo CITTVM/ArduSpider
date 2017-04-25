@@ -55,6 +55,8 @@ void loop() {
 avanzarDer();
 avanzarIzq();
 }
+
+//movimiento por lado Der
 void avanzarDer(){
  delay(500);
   bfd.write(80);
@@ -79,7 +81,7 @@ void avanzarDer(){
   }
 
 
-  
+//movimiento por lado IZQ
 void avanzarIzq(){
    delay(500);
   bfi.write(115);
@@ -105,7 +107,7 @@ void avanzarIzq(){
   }
 
 
-  
+ //proceso preparacion motores brazos
 void prepararBrazos(){
  bfi.write(90);
   delay(15);
@@ -120,7 +122,8 @@ void prepararBrazos(){
  btd.write(80); 
  delay(15);
   }
-  
+
+//proceso preparacion motores giro
 void prepararGiro(){
  gfi.write(60);
  gfd.write(115);
