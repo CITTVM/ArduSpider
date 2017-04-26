@@ -26,49 +26,49 @@ void loop() {
  bfi.write(115);
  bmd.write(75);
  bti.write(80);
- delay(200);
+ delay(500);
 
  //avance izquierdo
  gfi.write(60);
   gmd.write(125);
   gti.write(80);
-  delay(200);
+  delay(500);
 
 //bajar izquierdo
  bfi.write(95);
  bmd.write(90);
  bti.write(90);
- delay(200);
+ delay(500);
  
   //retroceso izquierdo
  gfi.write(100);
   gmd.write(90);
   gti.write(130);
-  delay(200);
+  delay(500);
 
   //subir Derecha
   bfd.write(60);
   bmi.write(120);
   btd.write(110);
-  delay(200);
+  delay(500);
 
 //avance Derecha
   gfd.write(125);
   gmi.write(60);
   gtd.write(90);
-  delay(200);
+  delay(500);
 
   //bajar Derecha
   bfd.write(90);
   bmi.write(90);
   btd.write(90);
-  delay(200);
+  delay(500);
 
   //retroceso Derecha
   gfd.write(90);
   gmi.write(85);
   gtd.write(50);
-  delay(200);
+  delay(500);
   
 
 }
