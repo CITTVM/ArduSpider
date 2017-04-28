@@ -1,5 +1,7 @@
 #include <Servo.h>
+#include <Ultrasonic.h>
 
+Ultrasonic ultrasonic(8,7); // (Trig PIN,Echo PIN)
 Servo gfi, gmi, gfd, gmd, gtd, gti;
 Servo bfi,bfd,bmd,bmi, btd, bti;
 
@@ -11,21 +13,33 @@ void setup() {
  gfd.attach(3);
  gmd.attach(4);
  gtd.attach(5);
- gti.attach(6);
+ gti.attach(A2);
 
- bfd.attach(8);
+ bfd.attach(A3);
  bfi.attach(9);
  bmd.attach(10);
  bmi.attach(11);
  btd.attach(13);
  bti.attach(12);
+ 
 }
 
-void loop() {
+
+void loop() {  
+ if (ultrasonic.Ranging(CM)>5){
+  caminar();
+ }
+}
+
+
+
+
+void caminar(){
+  
 //subir  izquierdo
  bfi.write(115);
  bmd.write(75);
- bti.write(80);
+ bti.write(70);
  delay(500);
 
  //avance izquierdo
@@ -70,5 +84,5 @@ void loop() {
   gtd.write(50);
   delay(500);
   
-
 }
+
