@@ -1,14 +1,17 @@
 #include <Servo.h>
 #include <Ultrasonic.h>
 
-Ultrasonic ultrasonic(8,7); // (Trig PIN,Echo PIN)
-Servo gfi, gmi, gfd, gmd, gtd, gti;
-Servo bfi,bfd,bmd,bmi, btd, bti;
+Ultrasonic ultrasonic(8,7); //Creacion del Objeto ultrasonico para el uso del sensor SR04
+
+Servo gfi, gmi, gfd, gmd, gtd, gti,bfi,bfd,bmd,bmi, btd, bti; //Creacion de los objetos correspondientes a cada motor
+
 
 
 
 void setup() {
-   
+   //Setteos de cada motor a un puerto de comunicacion (Digitales como Analogos tambien)
+  // g = Giro  b= Brazo f=Frontal  m=Medio t=Trasero i=Izquierdo d=Derecho
+  
  gfi.attach(1);
  gmi.attach(2);
  gfd.attach(3);
