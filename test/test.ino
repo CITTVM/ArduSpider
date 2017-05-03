@@ -30,6 +30,9 @@ void setup() {
 
 
 void loop() {
+ //aqui utilizamos el sensor de ultrasonido
+ // donde si es mayor a 15cm que reconoce el mismo camina en caso contrario
+ // si es menor, este girara a la izquierda
   int i=0;  
  if (ultrasonic.Ranging(CM)>15){
   caminar();
@@ -43,7 +46,7 @@ void loop() {
 
 
 
-
+//metodo encargado de la secuencia de caminata o de movimiento de la araña
 void caminar(){
   
 //subir  izquierdo
@@ -96,6 +99,9 @@ void caminar(){
   
 }
 
+//metodo utilizado para hacer girar la araña en el momento 
+//de que el sensor de ultrasonido detecte una distancia menor a 15cm,
+// se utiliza este metodo para poder realizar el giro pertiente y continuar el camino
 void girarIzquiera(){
 
  //subir Derecha
